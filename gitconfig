@@ -1,0 +1,36 @@
+[alias]
+  identity = !sh -c \"git config user.name '$(git config user.$1.name)' && git config user.email '$(git config user.$1.email)'\"
+  ll = log --pretty=format:"%C(red)%h\\ %C(green)%ad\\ %C(reset)%s%C(blue)\\ [%cn]%C(yellow)%d" --decorate --date=short --numstat
+  ls = log --pretty=format:"%C(red)%h\\ %C(green)%ad\\ %C(reset)%s%C(blue)\\ [%cn]%C(yellow)%d" --decorate --date=short
+[color]
+  ui = true
+[core]
+  excludesFile = /etc/gitignore
+  pager = delta
+[delta]
+  line-numbers = true
+  navigate = true
+  side-by-side = true
+[help]
+  autocorrect = 1
+[init]
+  defaultBranch = master
+[interactive]
+  diffFilter = delta --color-only
+[merge]
+  conflictstyle = diff3
+[pull]
+  ff = only
+[push]
+  default = matching
+[user]
+  useConfigOnly = true
+[user "personal"]
+  email = igor.sidorov@binarycode.ru
+  name = Igor Sidorov
+[user "onapp"]
+  email = igor.sidorov@onapp.com
+  name = Igor Sidorov
+[user "virtuozzo"]
+  email = igor.sidorov@virtuozzo.com
+  name = Igor Sidorov
