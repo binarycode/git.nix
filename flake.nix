@@ -15,6 +15,8 @@
     };
 
     checks.x86_64-linux.integration = pkgs.nixosTest {
+      name = "test";
+
       nodes.machine = _: {
         imports = [inputs.self.nixosModules.default];
       };
