@@ -10,5 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: cachix/install-nix-action@v22
+        with:
+          extra_nix_config: |
+            system-features = benchmark big-parallel nixos-test kvm
       - run: 'nix fmt -- --check .'
       - run: 'nix flake check'
