@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   environment = {
     etc = {
       gitconfig.source = ./gitconfig;
