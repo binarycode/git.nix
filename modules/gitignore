@@ -1,9 +1,1 @@
 *.swp
-.sync
-
-.gems
-vendor/ruby
-vendor/bundle
-.rbenv-version
-.ruby-version
-.rbenv-gemsets
