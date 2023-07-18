@@ -8,6 +8,7 @@
     systemPackages = [
       pkgs.delta
       pkgs.git
+      pkgs.tig
     ];
   };
 }
