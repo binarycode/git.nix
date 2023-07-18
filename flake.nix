@@ -17,7 +17,7 @@
         };
       };
       flake = let
-        module = import ./module.nix;
+        module = import ./modules/git.nix;
       in {
         nixosModules.default = module;
         darwinModules.default = module;
