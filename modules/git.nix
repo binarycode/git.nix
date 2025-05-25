@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   environment = {
     etc = {
-      gitconfig.source = ./gitconfig;
-      gitignore.source = ./gitignore;
+      gitconfig.text = builtins.readFile ./gitconfig;
+      gitignore.text = builtins.readFile ./gitignore;
     };
 
     systemPackages = [
