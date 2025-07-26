@@ -32,3 +32,5 @@
 [user "virtuozzo"]
   email = igor.sidorov@virtuozzo.com
   name = Igor Sidorov
+[url "git@bitbucket.org:virtuozzocore/"]
+  insteadOf = git@bitbucket.org:onappcore/
