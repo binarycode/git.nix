@@ -5,6 +5,8 @@
       gitignore.text = builtins.readFile ./gitignore;
     };
 
+    variables.GIT_CONFIG_SYSTEM = "/etc/gitconfig";
+
     systemPackages = [
       pkgs.delta
       pkgs.git
